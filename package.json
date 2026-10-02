@@ -1,0 +1,16 @@
+{
+  "name": "tudo-de-bom",
+  "version": "1.0.0",
+  "description": "TUDO DE BOM — Açaiteria: site, delivery, pedidos via WhatsApp e painel administrativo",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning --watch server/index.js",
+    "seed": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning server/db/seed.js --reset",
+    "seed:all": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning server/db/seed.js --all",
+    "images": "node scripts/generate-placeholders.js",
+    "test": "node --disable-warning=ExperimentalWarning --test tests/*.test.js"
+  }
+}

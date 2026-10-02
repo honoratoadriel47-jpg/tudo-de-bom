@@ -1,0 +1,40 @@
+/* ───────── TUDO DE BOM — tokens de design ─────────
+   Paleta tirada da logo: roxo-açaí profundo, dourado do contorno e folha verde. */
+:root {
+  --night: #1C0529;      /* fundo mais profundo */
+  --acai: #3E0941;       /* roxo da logo */
+  --acai-2: #561262;
+  --acai-3: #6E1B7E;
+  --grape: #9B3BD6;      /* roxo vibrante: interação */
+  --grape-2: #B865F0;
+  --lilac: #D9BFF5;
+  --lilac-2: #F1E6FD;
+  --gold: #F8BE1C;       /* dourado do contorno da logo */
+  --gold-2: #FFD658;
+  --cream: #FFF4E0;
+  --cream-2: #FBE6C2;
+  --berry: #E5405E;
+  --leaf: #5DBB46;
+  --ink: #2A0B36;        /* texto escuro sobre creme */
+  --white: #FFFFFF;
+
+  --font-display: 'Bricolage Grotesque', 'Arial Rounded MT Bold', 'Trebuchet MS', system-ui, sans-serif;
+  --font-body: 'Figtree', 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  --step--1: clamp(.82rem, .8rem + .1vw, .88rem);
+  --step-0: clamp(1rem, .96rem + .2vw, 1.08rem);
+  --step-1: clamp(1.2rem, 1.1rem + .4vw, 1.4rem);
+  --step-2: clamp(1.5rem, 1.3rem + .9vw, 2rem);
+  --step-3: clamp(2rem, 1.6rem + 1.8vw, 3rem);
+  --step-4: clamp(2.6rem, 1.8rem + 4vw, 5.6rem);
+
+  --r-sm: 10px; --r-md: 18px; --r-lg: 28px; --r-xl: 40px;
+  --sticker: 0 4px 0 var(--night);          /* sombra "adesivo", como a logo */
+  --lift: 0 18px 40px -18px rgba(28, 5, 41, .55);
+  --glass: rgba(255, 255, 255, .08);
+  --glass-border: rgba(217, 191, 245, .22);
+  --ease-out: cubic-bezier(.22, 1, .36, 1);
+  --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
+  --header-h: 68px;
+  --safe-b: env(safe-area-inset-bottom, 0px);
+}

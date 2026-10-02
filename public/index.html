@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>TUDO DE BOM — Açaiteria | Açaí, sorvetes e delivery</title>
+  <meta name="description" content="Açaí cremoso montado do seu jeito, picolés, baldes de sorvete, milk-shakes e sobremesas. Peça online na TUDO DE BOM Açaiteria e receba em casa ou retire no balcão.">
+  <meta name="theme-color" content="#3E0941">
+  <link rel="canonical" href="{{PUBLIC_URL}}/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="TUDO DE BOM — Açaiteria">
+  <meta property="og:title" content="TUDO DE BOM — Açaiteria">
+  <meta property="og:description" content="Monte seu açaí, veja o preço na hora e peça pelo WhatsApp. Delivery e retirada.">
+  <meta property="og:url" content="{{PUBLIC_URL}}/">
+  <meta property="og:image" content="{{PUBLIC_URL}}/assets/brand/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
+  <link rel="apple-touch-icon" href="/assets/brand/icon-180.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preload" as="image" href="/assets/brand/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/store.css">
+  <!--JSONLD-->
+  <script type="module" src="/js/store/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Abertura com a logo (mostrada uma vez por sessão). Para trocar a logo: substitua /assets/brand/logo.webp e logo.png -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__rays"></div>
+    <div class="intro__logo">
+      <picture><source srcset="/assets/brand/logo.webp" type="image/webp"><img src="/assets/brand/logo.png" alt="" width="640" height="549"></picture>
+      <div class="intro__shine"></div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="wrap">
+      <a class="header__logo" href="/" aria-label="TUDO DE BOM — início">
+        <picture><source srcset="/assets/brand/logo-sm.webp" type="image/webp"><img src="/assets/brand/logo.png" alt="TUDO DE BOM Açaiteria" width="64" height="55" data-logo></picture>
+      </a>
+      <span class="status-pill" data-status>Carregando…</span>
+      <nav class="header__nav" aria-label="Principal">
+        <a href="/cardapio" data-nav="cardapio">Cardápio</a>
+        <a href="/monte-seu-acai" data-nav="monte-seu-acai">Monte seu açaí</a>
+        <a href="/promocoes" data-nav="promocoes">Promoções</a>
+        <a href="/galeria" data-nav="galeria">Galeria</a>
+      </nav>
+      <button class="icon-btn cart-btn" id="cart-open" aria-label="Abrir carrinho" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6.2"/><circle cx="10" cy="20.5" r="1.3"/><circle cx="17" cy="20.5" r="1.3"/></svg>
+        <span class="cart-btn__count" data-cart-count hidden>0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__rays" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="hero__copy">
+          <span class="status-pill" data-status>Carregando…</span>
+          <h1 id="hero-title"><span class="line"><span>Tudo de bom</span></span><span class="line"><span>cabe num</span></span><span class="line"><span>copo.</span></span></h1>
+          <p class="hero__lead">Açaí cremoso batido na hora, com os acompanhamentos que você escolher. Monte do seu jeito e receba geladinho em casa.</p>
+          <div class="hero__ctas">
+            <a class="btn" href="/monte-seu-acai" data-nav="monte-seu-acai">Monte seu açaí</a>
+            <a class="btn btn--ghost" href="/cardapio" data-nav="cardapio">Ver cardápio</a>
+          </div>
+          <p class="hero__facts" data-hero-facts></p>
+        </div>
+
+        <div class="hero__art" id="hero-art" aria-hidden="true">
+          <div class="hero__plate"></div>
+          <div class="hero__ring"></div>
+          <div class="hero__cup" data-depth="0.15">
+            <svg viewBox="0 0 420 520">
+              <defs>
+                <linearGradient id="hc-acai" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7A2690"/><stop offset="1" stop-color="#3E0941"/></linearGradient>
+                <linearGradient id="hc-glass" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".45" stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#fff" stop-opacity=".4"/></linearGradient>
+                <radialGradient id="hc-dome" cx=".4" cy=".3"><stop offset="0" stop-color="#9B3BD6"/><stop offset="1" stop-color="#561262"/></radialGradient>
+              </defs>
+              <path d="M70 190 L350 190 L318 492 Q210 512 102 492 Z" fill="url(#hc-acai)"/>
+              <path d="M82 300 Q210 316 338 300 L334 330 Q210 346 86 330 Z" fill="#FFF4E0" opacity=".9"/>
+              <path d="M92 400 Q210 414 328 400 L325 418 Q210 432 95 418 Z" fill="#E5405E" opacity=".85"/>
+              <path d="M70 190 L350 190 L318 492 Q210 512 102 492 Z" fill="url(#hc-glass)" stroke="#fff" stroke-opacity=".75" stroke-width="5"/>
+              <path d="M100 215 L92 470" stroke="#fff" stroke-opacity=".5" stroke-width="10" stroke-linecap="round"/>
+              <path d="M44 196 Q60 70 210 62 Q360 70 376 196 Z" fill="url(#hc-dome)"/>
+              <path d="M84 168 q20 34 40 0 t40 0 t40 0 t40 0 t40 0 t40 0" fill="none" stroke="#FFF4E0" stroke-width="12" stroke-linecap="round"/>
+              <path d="M300 172 Q306 230 296 262" stroke="#FFF4E0" stroke-width="10" stroke-linecap="round" fill="none"/>
+              <circle cx="296" cy="266" r="8" fill="#FFF4E0"/>
+              <g><circle cx="150" cy="118" r="26" fill="#FFF0B3" stroke="#F2D46B" stroke-width="4"/><circle cx="150" cy="118" r="6" fill="#E8D08A"/></g>
+              <g><circle cx="248" cy="100" r="25" fill="#8BC34A" stroke="#6D4C2F" stroke-width="4"/><circle cx="248" cy="100" r="9" fill="#F1F8D4"/></g>
+              <g transform="translate(205 92) rotate(-12)"><path d="M0-30C24-30 34-10 29 8 24 26 8 37 0 40-8 37-24 26-29 8-34-10-24-30 0-30Z" fill="#E5304F"/><path d="M-16-26 0-40 16-26 5-21 0-32-5-21Z" fill="#3E9A3A"/><circle cx="-9" cy="-4" r="2.5" fill="#FFE9A8"/><circle cx="8" cy="-2" r="2.5" fill="#FFE9A8"/><circle cx="-1" cy="12" r="2.5" fill="#FFE9A8"/><circle cx="12" cy="16" r="2.5" fill="#FFE9A8"/></g>
+              <g transform="translate(305 128) rotate(18)"><rect x="-12" y="-46" width="24" height="92" rx="5" fill="#B5651D"/><rect x="-12" y="-46" width="24" height="12" fill="#C8102E"/></g>
+              <g fill="#C68B3E"><circle cx="110" cy="160" r="7"/><circle cx="128" cy="150" r="6"/><circle cx="196" cy="150" r="7"/><circle cx="226" cy="145" r="6"/><circle cx="262" cy="152" r="7"/><circle cx="320" cy="168" r="6"/><circle cx="96" cy="176" r="5"/></g>
+              <rect x="38" y="182" width="344" height="20" rx="10" fill="#fff" opacity=".9"/>
+            </svg>
+          </div>
+          <div class="float" data-depth="0.6" style="left:2%;top:14%;width:64px"><svg viewBox="-40 -42 80 84"><path d="M0-30C24-30 34-10 29 8 24 26 8 37 0 40-8 37-24 26-29 8-34-10-24-30 0-30Z" fill="#E5304F"/><path d="M-16-26 0-40 16-26 5-21 0-32-5-21Z" fill="#3E9A3A"/><circle cx="-9" cy="-4" r="2.5" fill="#FFE9A8"/><circle cx="9" cy="6" r="2.5" fill="#FFE9A8"/></svg></div>
+          <div class="float" data-depth="0.9" style="right:6%;top:4%;width:56px"><svg viewBox="-30 -30 60 60"><path d="M-20 18C-30-6-4-28 22-24 26 2 6 26-20 18Z" fill="#5DBB46"/><path d="M-18 16 18-20" stroke="#2E7D32" stroke-width="3"/></svg></div>
+          <div class="float" data-depth="0.45" style="left:-2%;bottom:20%;width:52px"><svg viewBox="-30 -30 60 60"><circle r="26" fill="#FFF0B3" stroke="#F2D46B" stroke-width="4"/><circle r="6" fill="#E8D08A"/></svg></div>
+          <div class="float" data-depth="0.75" style="right:16%;top:46%;width:30px"><svg viewBox="-20 -20 40 40"><circle r="17" fill="#561262"/><circle cx="-5" cy="-6" r="5" fill="#B865F0" opacity=".7"/></svg></div>
+          <div class="float" data-depth="1" style="left:16%;top:4%;width:22px"><svg viewBox="-20 -20 40 40"><circle r="17" fill="#3E0941"/><circle cx="-5" cy="-6" r="5" fill="#B865F0" opacity=".6"/></svg></div>
+          <div class="hero__sticker" data-hero-price>Açaí a partir de <b>R$ —</b></div>
+        </div>
+      </div>
+    </section>
+    <svg class="drip" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true" style="background:var(--cream)"><path d="M0 0H1440V22H1340C1336 22 1338 15 1340 37A28 28 0 0 1 1284 37C1286 15 1288 22 1274 22H1156C1152 22 1154 18 1156 34A20 20 0 0 1 1117 34C1119 18 1121 22 1107 22H983C979 22 981 36 983 53A21 21 0 0 1 941 53C943 36 945 22 931 22H854C850 22 852 46 854 62A20 20 0 0 1 815 62C817 46 819 22 805 22H700C696 22 698 20 700 35A19 19 0 0 1 662 35C664 20 666 22 652 22H572C568 22 570 7 572 32A31 31 0 0 1 510 32C512 7 514 22 500 22H443C439 22 441 40 443 57A20 20 0 0 1 402 57C404 40 406 22 392 22H262C258 22 260 26 262 44A22 22 0 0 1 219 44C221 26 223 22 209 22H153C149 22 151 40 153 55A20 20 0 0 1 114 55C116 40 118 22 104 22H0Z" fill="var(--acai)"/></svg>
+
+    <!-- QUERIDINHOS -->
+    <section class="section section--cream on-cream" aria-labelledby="fav-title" style="padding-top:40px">
+      <div class="wrap">
+        <div class="section__head" data-reveal>
+          <h2 id="fav-title">Os queridinhos da TUDO DE BOM</h2>
+          <p>Os que mais saem do balcão e voltam no pedido seguinte.</p>
+        </div>
+        <div class="featured" id="featured" aria-busy="true">
+          <div class="skeleton" style="height:380px"></div><div class="skeleton" style="height:380px"></div><div class="skeleton" style="height:380px"></div>
+        </div>
+      </div>
+    </section>
+    <svg class="drip" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true" style="background:var(--acai)"><path d="M0 0H1440V22H1340C1336 22 1338 15 1340 37A28 28 0 0 1 1284 37C1286 15 1288 22 1274 22H1156C1152 22 1154 18 1156 34A20 20 0 0 1 1117 34C1119 18 1121 22 1107 22H983C979 22 981 36 983 53A21 21 0 0 1 941 53C943 36 945 22 931 22H854C850 22 852 46 854 62A20 20 0 0 1 815 62C817 46 819 22 805 22H700C696 22 698 20 700 35A19 19 0 0 1 662 35C664 20 666 22 652 22H572C568 22 570 7 572 32A31 31 0 0 1 510 32C512 7 514 22 500 22H443C439 22 441 40 443 57A20 20 0 0 1 402 57C404 40 406 22 392 22H262C258 22 260 26 262 44A22 22 0 0 1 219 44C221 26 223 22 209 22H153C149 22 151 40 153 55A20 20 0 0 1 114 55C116 40 118 22 104 22H0Z" fill="var(--cream)"/></svg>
+
+    <!-- PROMOÇÕES -->
+    <section class="section section--acai" id="promocoes" aria-labelledby="promo-title" style="padding-top:40px">
+      <div class="wrap">
+        <div class="section__head" data-reveal>
+          <h2 id="promo-title">Hoje tem promo!</h2>
+          <p>Os descontos entram sozinhos no carrinho quando o pedido se encaixa.</p>
+        </div>
+        <div class="promos" id="promos"></div>
+      </div>
+    </section>
+
+    <!-- MONTE SEU AÇAÍ -->
+    <section class="section section--night" id="monte-seu-acai" aria-labelledby="builder-title">
+      <div class="wrap">
+        <div class="section__head" data-reveal>
+          <h2 id="builder-title">Monte seu açaí</h2>
+          <p>Escolha o tamanho e vá adicionando. O preço aparece na hora, sem surpresa no final.</p>
+        </div>
+        <div id="builder"><div class="skeleton" style="height:420px"></div></div>
+      </div>
+    </section>
+    <svg class="drip" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true" style="background:var(--cream)"><path d="M0 0H1440V22H1340C1336 22 1338 15 1340 37A28 28 0 0 1 1284 37C1286 15 1288 22 1274 22H1156C1152 22 1154 18 1156 34A20 20 0 0 1 1117 34C1119 18 1121 22 1107 22H983C979 22 981 36 983 53A21 21 0 0 1 941 53C943 36 945 22 931 22H854C850 22 852 46 854 62A20 20 0 0 1 815 62C817 46 819 22 805 22H700C696 22 698 20 700 35A19 19 0 0 1 662 35C664 20 666 22 652 22H572C568 22 570 7 572 32A31 31 0 0 1 510 32C512 7 514 22 500 22H443C439 22 441 40 443 57A20 20 0 0 1 402 57C404 40 406 22 392 22H262C258 22 260 26 262 44A22 22 0 0 1 219 44C221 26 223 22 209 22H153C149 22 151 40 153 55A20 20 0 0 1 114 55C116 40 118 22 104 22H0Z" fill="var(--night)"/></svg>
+
+    <!-- CARDÁPIO -->
+    <section class="section section--cream on-cream" id="cardapio" aria-labelledby="menu-title" style="padding-top:40px">
+      <div class="wrap">
+        <div class="section__head" data-reveal>
+          <h2 id="menu-title">Cardápio</h2>
+          <p>Açaí, picolés, baldes de sorvete, milk-shakes e sobremesas. Tudo pronto para pedir.</p>
+        </div>
+        <div id="menu"><div class="grid"><div class="skeleton" style="height:340px"></div><div class="skeleton" style="height:340px"></div><div class="skeleton" style="height:340px"></div></div></div>
+      </div>
+    </section>
+    <svg class="drip" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true" style="background:var(--night)"><path d="M0 0H1440V22H1340C1336 22 1338 15 1340 37A28 28 0 0 1 1284 37C1286 15 1288 22 1274 22H1156C1152 22 1154 18 1156 34A20 20 0 0 1 1117 34C1119 18 1121 22 1107 22H983C979 22 981 36 983 53A21 21 0 0 1 941 53C943 36 945 22 931 22H854C850 22 852 46 854 62A20 20 0 0 1 815 62C817 46 819 22 805 22H700C696 22 698 20 700 35A19 19 0 0 1 662 35C664 20 666 22 652 22H572C568 22 570 7 572 32A31 31 0 0 1 510 32C512 7 514 22 500 22H443C439 22 441 40 443 57A20 20 0 0 1 402 57C404 40 406 22 392 22H262C258 22 260 26 262 44A22 22 0 0 1 219 44C221 26 223 22 209 22H153C149 22 151 40 153 55A20 20 0 0 1 114 55C116 40 118 22 104 22H0Z" fill="var(--cream)"/></svg>
+
+    <!-- GALERIA -->
+    <section class="section section--night" id="galeria" aria-labelledby="gal-title" style="padding-top:40px">
+      <div class="wrap">
+        <div class="section__head" data-reveal>
+          <h2 id="gal-title">Feito pra dar vontade</h2>
+          <p>Toque numa foto para ver de perto.</p>
+        </div>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA + INFORMAÇÕES -->
+    <section class="section section--night" aria-labelledby="how-title" style="padding-top:24px">
+      <div class="wrap">
+        <div class="section__head" data-reveal><h2 id="how-title">Do celular para a sua colher</h2></div>
+        <ol class="how" data-reveal>
+          <li><b>Escolha ou monte</b><p>Pegue um dos nossos clássicos ou monte o açaí do seu jeito.</p></li>
+          <li><b>Confira o carrinho</b><p>Quantidades, adicionais e total, tudo à vista.</p></li>
+          <li><b>Entrega e pagamento</b><p>Delivery ou retirada, PIX, cartão ou dinheiro.</p></li>
+          <li><b>Envie pelo WhatsApp</b><p>O pedido chega pronto para a gente e você acompanha cada etapa.</p></li>
+        </ol>
+        <div class="info" id="info"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p data-footer-name>© TUDO DE BOM — Açaiteria</p>
+      <p>Fotos ilustrativas. Preços sujeitos a alteração.</p>
+    </div>
+  </footer>
+
+  <!-- Barra flutuante do carrinho (celular) -->
+  <div class="cart-bar" id="cart-bar" role="region" aria-label="Resumo do carrinho">
+    <span class="cart-bar__text">🛒 <span data-bar-text class="tabular">0 itens</span></span>
+    <button class="btn btn--sm" id="cart-bar-open">Ver carrinho</button>
+  </div>
+
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+</body>
+</html>
